@@ -1,0 +1,34 @@
+.menu{
+	position: relative;
+	z-index:10;
+}
+.credits-area{
+	position: absolute;
+	top:0;
+	z-index:0;
+	width:100%;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.credits-area .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:70%;
+}
+.credits-area p:nth-child(1){
+	font-family:font2;
+	font-size:50px;
+	margin-bottom:20px;
+}
+.credits-area p{
+	font-family:font1;
+	font-size:20px;
+	text-align: center;
+	line-height: 1.6;
+}
+.credits-area p:nth-child(2){
+	margin-bottom:6px;
+}

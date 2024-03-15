@@ -1,0 +1,619 @@
+@media screen and (max-width:1100px){
+	.full-picture .picture{
+		margin-bottom:0;
+		height:60vw;
+		width:95vw;
+	}
+	.menu ul{
+		display: none;
+	}
+	.menu-open{
+		display: flex;
+	}
+	.logo{
+		width:140px;
+		height: 140px;
+		margin-left:40px;
+	}
+	.blur-hover p {
+		font-size:40px;
+	}
+	.blur-hover p:nth-child(2){
+		font-size:20px;
+	}
+	.menu{
+		height:140px;
+	}
+	.gallery-container .container{
+		width:85vw;
+	}
+	.width{
+		height:35vw;
+	}
+	.height{
+		height:45vw;
+	}
+	.full-picture .sec1 p, .full-picture .sec3 p{
+		font-size:40px;
+		font-weight: bold;
+	}
+	.picture .height{
+		height:100%;
+		width:70%;
+	}
+	.pop-up{
+		height:25vh;
+		margin-top: -25vh;
+	}
+	.sectiune-despre .container{
+		flex-direction: column;
+		align-items:center;
+	}
+	.sectiune-despre .container .text{
+		width: 90%;
+		margin-top: 40px;
+	}
+	.sectiune-despre .poza{
+		width:43vw;
+		height:45vw;
+		margin-left: 0;
+	}
+	.text .button{
+		position: relative;
+		left:50%;
+		transform: translateX(-50%);
+	}
+	.sectiune-contact{
+		margin-top:100px;
+	}
+	.sectiune-contact .container{
+		height: 100%;
+		max-height: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: initial;
+	}
+	.sectiune-contact .left{
+		height:300px;
+		width:100%;
+		max-width: none;
+		max-height: none;
+	}
+	.sectiune-contact .right{
+		align-items: center;
+		width:100%;
+		display: flex;
+		justify-content: center;
+		margin-top:30px;
+	}
+	.sectiune-contact .text{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.sectiune-contact .around .logo{
+		margin-left:0;
+	}
+	.sectiune-contact .inside{
+		justify-content: center;
+	}
+	
+	.sectiune-principala .right{
+		width:65%;
+	}
+	.sectiune-principala .right div{
+		flex-direction: column;
+	}
+	.sectiune-principala .left{
+		justify-content: center;
+		width:35%;
+	}
+	.sectiune-principala .left ul li{
+		margin-left: 0;
+	}
+	.sectiune-principala{
+		height:calc(100vh - 120px) !important;
+	}
+
+	.slide{
+		height: 35vw;
+		margin-top:60px;
+	}
+	.main .left div:nth-child(4){
+		display: flex;
+	}
+	.main .right div:nth-child(3){
+		height:60vw;
+	}
+	.main .right .poza-cafea{
+		background-size:35% 70%;
+		background-position: left center;
+	}
+	.gallery-container .container .line{
+		width:100%;
+	}
+	.sectiune-despre .container .poza{
+		margin-right: 0;
+	}
+	.sectiune-carte1{
+		height:40vw!important;
+	}
+	.sectiune-carte1 .container .carte{
+		width:26vw!important;
+		height: 36vw!important;
+		margin-left:50px!important;
+	}
+	.sectiune-carte1 .container .text-carte h1{
+		font-size:3.0vw!important;
+	}
+	.sectiune-carte1 .container .text-carte{
+		width:55%!important;
+	}
+	.sectiune-carte1 .container .text-carte p{
+		font-size:1.50vw!important;
+	}
+	.sectiune-carte1:nth-child(4) .text-carte{
+		margin-left:50px!important;
+	}
+	.sectiune-carte1:nth-child(4) .carte{
+		margin-left:0!important;
+	}
+	.sectiune-carte1 .container .text-carte .buton p{
+		font-size:1.5vw!important;
+	}
+	.sectiune-carte1 .container .text-carte .buton{
+		width:25vw!important;
+		height:5vw!important;
+	}
+	.recenzie .container{
+		width:70%!important;
+	}
+	.principal .container{
+		width:80%!important;
+	}
+	.principal .container .imagine-principala, .principal .container .imagine-secundara{
+		height:48vw;
+		width: 35vw;
+	}
+	.main .left .buton-carti{
+		width:90%!important;
+	}
+	.main .left .buton-carti p{
+		margin-top:0!important;
+	}
+
+
+}
+@media screen and (max-width: 768px){
+	.sectiune-despre .container .poza{
+		max-width: none;
+		max-width: none;
+	}
+	.picture p{
+		font-size:20px;
+		bottom:-70px;
+	}
+	.sectiune-contact .left{
+		width:100%;
+	}
+	.sectiune-contact .right p{
+		font-size:22px;
+	}
+	.sectiune-contact .right p:nth-child(2){
+		font-size:13px;
+	}
+	.logo{
+		width:80px;
+		height: 100px;
+		margin-left:40px;
+	}
+	.menu-open{
+		width:25px;
+		height:15px; 
+		margin-right: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.blur-hover{
+		height:70vw;
+		width:85%;
+		margin:0 auto;
+		margin-top:10px;
+	}
+	.blur-hover p {
+		font-size:25px;
+	}
+	.blur-hover p:nth-child(2){
+		font-size:15px;
+	}
+	.center .first p:nth-child(1){
+		font-size:15px;
+	}
+	.center p{
+		font-size:13px;
+	}
+	.text-before-gallery .text{
+		font-size:17px;
+	}
+	.descriere{
+		font-size:25px;
+	}
+	.line{
+		flex-direction: column;
+		margin-top:17vw;
+	}
+	.gallery-container .container{
+		width:85%;
+	}
+	.width{
+		height:150vw;
+	}
+	.height{
+		height:170vw;
+	}
+	.special2{
+		height:172vw!important;
+	}
+	.photo{
+		width:100%;
+		height: 45%;
+	}
+	.line:nth-child(1){
+		margin-top:50px;
+	}
+	.full-picture .sec1,.full-picture .sec3{
+		width:70px;
+	}
+	.full-picture .sec3 .full-close{
+		font-size:20px;
+	}
+	.sec3 .part1{
+		height:60px;
+	}
+	.pop-up{
+		height:50vw;
+		margin-top:-50vw;
+	}
+	.pop-up .container ul{
+		flex-direction: column;
+		height: 70%;
+		width:initial;
+	}
+	.pop-up .container ul p{
+		font-size:20px;
+	}
+	.pagina-urmatoare .next,.pagina-urmatoare .previous{
+		width:40px;
+		height: 40px;
+	}
+	.full-close{
+		font-size:20px;
+	}
+	.sectiune-despre .container .text{
+		width: 100%;
+		margin-top: 50px;
+	}
+	.sectiune-despre{
+		margin-top:100px;
+	}
+	.sectiune-despre .container .text p{
+		text-align: center;
+		text-indent: 0;
+	}
+	.sectiune-despre .poza{
+		width:100%;
+		height:80vw;
+		margin-left: 0;
+	}
+	.sectiune-despre .container .text p:nth-child(1){
+		font-size:25px;
+	}
+	.text .button{
+		width:140px;
+		height:40px;
+	}
+	.sectiune-despre .container .text .button p{
+		font-size:11px;
+	}
+	.home-icon{
+		width:20px;
+		height:20px;
+	}
+	.sectiune-contact .left{
+		width:100vw;
+		max-width: none;
+	}
+	.sectiune-contact .inside .logo{
+		width:40px;
+		height: 40px;
+	}
+	.sectiune-contact .inside p{
+		font-size:15px;
+	}
+	.sectiune-contact .left{
+		height:250px;
+	}
+	.sectiune-contact .container{
+		width:100%;
+	}
+	form span{
+		font-size:16px;
+	}
+	form input{
+		font-size:16px;
+	}
+	.sectiune-contact .right .text p:nth-child(2){
+		text-align: center;
+	}
+
+	.credits-area .container p:nth-child(3){
+		margin-top:5px;
+	}
+	.credits-area .container p:nth-child(1){
+		font-size:40px;
+	}
+	.credits-area .container p{
+		font-size:17px;
+	}
+
+	.slide .container{
+		animation:slide-anim2 linear infinite 70s;
+		margin-left:0;
+		width:2000vw;
+	}
+	.slide .container .slide-poza{
+		width:100vw;
+	}
+	.slide .blur{
+		width:30px !important;
+		height:110% !important;
+		margin-top:-10px;
+		background-color: white !important;
+	}
+	.slide .blur:nth-child(2){
+		left: 0;
+	}
+	.slide{
+		height:70vw;
+	}
+	.slide .slide-poza .text-container{
+		height:40px;
+	}
+	.slide .slide-poza .text-container p{
+		font-size:14px;
+		margin-right:50px;
+	}
+	.main .container{
+		flex-direction: column-reverse;
+	}
+	.welcome {
+		margin-top:70px;
+	}
+	.welcome p:nth-child(1){
+		font-size:18px;
+	}
+	.welcome p:nth-child(2){
+		font-size: 13px;
+	}
+	.main .container{
+		width:90%;
+	}
+	.main .container .right{
+		width:100%;
+	}
+	.main .container div:nth-child(1) p{
+		font-size:15px;
+		margin-top: 20px;
+		text-align: center;
+		text-indent: 0;
+	}
+	.main .container .right div:nth-child(1){
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+	}
+	.main .container .imagine{
+		float:none;
+		width:55vw;
+		height:55vw;
+		max-height: none;
+		max-width: none;
+	}
+	.main .container div:nth-child(2){
+		display: flex;
+		flex-direction: column;
+	}
+	.main .container .right div:nth-child(2) p:nth-child(1){
+		text-align: center;
+		font-size: 22px!important;
+		display: inline-block;
+		border:none;
+		text-decoration: underline;
+	}
+	.main .container div:nth-child(2) p:nth-child(2){
+		font-size:15px;
+	}
+	.main .right div .buton p{
+		margin-top:0px!important;
+		margin:0!important;
+	}
+	.main .right .buton{
+		align-self:center;
+		margin-left:0!important;
+	}
+	.main .right .buton p{
+		font-size:14px!important;
+	}
+	.main .right div:nth-child(3){
+		height: initial;
+		max-height: none;
+		overflow:visible;
+		display: initial;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.main .right div:nth-child(3) .container-text{
+		width:100%;
+		position: initial;
+		height: initial;
+	}
+	.main .right div:nth-child(3) .container-text p{
+		text-align: center;
+		font-size:15px;
+		margin-left:20px !important;
+		margin-right: 30px;
+		margin-top:35px;
+
+	}
+	.main .right div:nth-child(3) .poza-cafea{
+		position: initial;
+		background-color: blue;
+		width:55vw;
+		height:55vw;
+		background-size: cover;
+		align-self: center;
+
+	}
+	.main .right div:nth-child(3) .poza-cafea div{
+		display: none;
+
+	}
+	.main .container .left{
+		width:100%;
+	}
+	.main .left .poza-eveniment{
+		width:55vw;
+		height:75vw;
+	}
+	.main .left div{
+		margin-top:30px;
+		width:100%;
+	}
+	.main .left div:nth-child(1){
+		margin-top:45px;
+	}
+	.footer{
+		margin-top:80px;
+	}
+	.main .left div p{
+		max-width: 400px;
+		margin-left:20px;
+		margin-right: 20px;
+	}
+	.special{
+		height:75vw !important;
+	}
+	.special .photo{
+		height: 100%;
+	}
+	.sectiune-carte1{
+		height:initial!important;
+	}
+	.sectiune-carte1 .container{
+		flex-direction: column!important;
+		align-items: center;
+	}
+	.sectiune-carte1:nth-child(2) .container{
+		flex-direction: column-reverse!important;
+	}
+	.sectiune-carte1 .container .text-carte{
+		margin-left:0!important;
+		margin-right:0!important;
+
+	}
+	.sectiune-carte1 .container .carte{
+		margin-left:0!important;
+		margin-right:0!important;
+		margin-top:50px;
+		width:100%!important;
+		height: 100vw!important;
+
+	}
+	.sectiune-carte1 .container .text-carte{
+		width:100%!important;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.sectiune-carte1 .container .text-carte h1{
+		text-align: center!important;
+		font-size:25px!important;
+		margin-top:50px!important;
+	}
+	.sectiune-carte1 .container .text-carte p{
+		text-indent: 0!important;
+		text-align: center;
+		font-size:15px!important;
+		margin-top:20px!important;
+	}
+	.sectiune-carte1 .container .text-carte .buton{
+		margin-bottom:50px;
+		margin-top:70px!important;
+		width:250px!important;
+		height:50px!important;
+
+
+	}
+	.sectiune-carte1 .container .text-carte .buton p{
+		margin-top:0!important;
+		font-size:17px!important;
+	}
+	.recenzie .container p{
+		font-size:16px!important;
+	}
+	.recenzie .container p:nth-child(2){
+		align-self: center!important;
+		margin: 0!important;
+		margin-top:20px!important;
+		margin-bottom:50px!important;
+		font-weight: bold!important;
+		font-size:19px!important;
+	}
+	.principal .container div:nth-child(1){
+		flex-direction: column;
+	}
+	.principal .container .imagine-principala, .principal .container .imagine-secundara{
+		margin-left:0;
+		margin-right: 0;
+		height:90vw;
+		width:65vw;
+	}
+	.principal .container .imagine-secundara{
+		margin-top:70px;
+	}
+	.principal .comanda{
+		width:300px!important;
+	}
+	.principal .container .wrapper:nth-child(4){
+		width:125%!important;
+		border-radius:0!important;
+	}
+	.principal .container .wrapper:nth-child(4) p:nth-child(1){
+		font-size:25px!important;
+	}
+	.principal .container .wrapper:nth-child(4) .recenz{
+		margin-left:0px!important;
+	}
+	.principal .container .wrapper .recenz p:nth-child(1){
+		font-size:16px!important;
+		align-self: center!important;
+		margin-left:30px;
+		margin-right:30px;
+		margin-top:60px!important;
+		text-align:center!important;
+		line-height: 1.6!important;
+	}
+	.principal .container .wrapper .recenz p:nth-child(3){
+		margin-left:30px;
+		margin-top:30px!important;
+		margin-right: 20px!important;
+	}
+	.principal .container .wrapper .recenz p:nth-child(2){
+		align-self: center!important;
+	}
+
+
+
+}

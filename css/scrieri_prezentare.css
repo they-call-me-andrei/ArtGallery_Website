@@ -1,0 +1,54 @@
+.sectiune-principala{
+	margin-top:100px;
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+.sectiune-principala .container{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	max-width: 1600px;
+	min-width: 0;
+}
+
+.sectiune-principala .carte{
+	width:24vw;
+	height:30vw;
+	max-height:550px;
+	max-width:450px;
+	min-width: 350px;
+	min-height: 450px;
+}
+.sectiune-principala div{
+	display: flex;
+	justify-content: center;
+	width:100%;
+	min-width: 0;
+	align-items: center;
+}
+.sectiune-principala div:nth-child(1) .carte{
+	background-image: url(../imagini/jurnal_de_vacanta.png);
+	background-size: cover;
+	background-position: center;
+}
+.sectiune-principala .descriere{
+	width:40%;
+	height: 100%;
+	margin-left:150px;
+	border:none;
+	min-width: 0;
+}
+.sectiune-principala .descriere p{
+	text-indent: 40px;
+	font-size:20px;
+	line-height: 1.6;
+}
+.sectiune-principala  div :nth-child(2) .descriere{
+	margin-left:0;
+}
+.sectiune-principala  div :nth-child(2) .carte{
+	margin-left:150px;
+}
+
+

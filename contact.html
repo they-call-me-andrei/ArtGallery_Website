@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portofoliu</title>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale = 1">
+	<link href="css/style.css" type="text/css" media="screen" rel="stylesheet">
+	<link href="css/contact_style.css" type="text/css" media="screen" rel="stylesheet">
+	<link href="css/breakpoints.css" type="text/css" media="screen" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body style = "display: flex;flex-direction: column;justify-content: space-between;">
+
+	<video id = "video1" autoplay muted loop>
+		<source src = "video/video1.mp4" type = "video/mp4">
+	</video>
+	<div class = "dark" style = "position: fixed;z-index:5;background-color: black;opacity:0.45;width:100%;height: 100%;">
+		
+	</div>
+
+	<div class = "menu" style = "position: relative;z-index:100;">
+		<div class = "logo">
+			
+		</div>
+		<ul>
+			<li onclick = "myhref('index.html')">ACASA</li>
+			<li>TABLOURI
+				<ul>
+					<li onclick="myhref('portrete.html')">DRY PASTEL CHALK </li>
+					<li onclick="myhref('graphite1.html')">GRAPHITE 1991</li>
+					<li onclick="myhref('graphite2_2.html')">GRAPHITE 1987-1990</li>
+					<li onclick="myhref('graphite3.html')">GRAPHITE 2016</li>
+					<li onclick="myhref('regular_color.html')">REGULAR COLOR PENCILS</li>
+				</ul>
+			</li>
+			<li onclick="myhref('carti.html')">CARTI</li>
+			<li onclick="myhref('despre.html')"><a>DESPRE</a></li>
+			<li onclick = "myhref('contact.html')"><a>CONTACT</a></li>
+			<li onclick = "myhref('credits.html')">CREDITS</li>
+		</ul>
+		<div class = "menu-open">
+			<div class = "line-menu"></div>
+			<div class = "line-menu"></div>
+			<div class = "line-menu"></div>
+		</div>
+	</div>
+
+	<div class = "sectiune-contact">
+		<div class = "container">
+			<div class = "left">
+				<div class = "inside">
+					<div class = "around">
+						<div class ="logo" style = "background-image: url(imagini/fb.jpg)">
+							
+						</div>
+						<p class = "logo-text">Valentina Ghinea</p>
+					</div>
+				</div>
+				<div class = "inside">
+					<div class = "around">
+						<div class ="logo" style = "background-image: url(imagini/gmail.png)">
+							
+						</div>
+						<p class = "logo-text">valentinaghinea@yahoo.com</p>
+					</div>
+				</div>
+				<div class = "inside">
+					<div class = "around">
+						<div class ="logo" style = "background-image: url(imagini/wapp.png)">
+							
+						</div>
+						<p class = "logo-text">0723018491</p>
+					</div>
+				</div>
+			</div>
+			<div class = "right">
+				<div class = "text">
+					<p>Contacteaza-ma!</p>
+					<p>Lasa-mi un mesaj si te voi contacta cat de curand.</p>
+				</div>
+				<form id = "form" action = "php/send.php" method = "POST">
+					<div>
+						<input id = "nume" type = "text" required="required" name = "name">
+						<span>Numele si prenumele</span>
+					</div>
+					<div>
+						<input id = "email" type = "text" required="required" name = "email">
+						<span>Email-ul tau</span>
+					</div>
+					<div>
+						<textarea id = "mes" required="required" name = "textarr"></textarea>
+						<span>Mesajul catre mine!</span>
+					</div>
+					<input type = "submit" id = "submit" value = "TRIMITE">
+				</form>
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class = "footer">
+		<div class = "center">
+			<div class = "first">
+				<p>Valentina Ghinea</p>
+				<p>Artisă & Scriitoare</p>
+			</div>
+			<div class = "second">
+				<p>@ Copyright 2021 Valentina Ghinea</p>
+			</div>
+			<div class = "bottom">
+				<div class = "fb social">
+				
+				</div>
+				<div class = "wapp social">
+				
+				</div>
+				<div class = "gm social">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class = "full">
+		<div class = "full-part2">
+			<div class = "container">
+				<ul>
+					<li>TABLOURI</li>
+					<li onclick="myhref('portrete.html')">DRY PASTEL CHALK </li>
+					<li onclick="myhref('graphite1.html')">GRAPHITE 1991</li>
+					<li onclick="myhref('graphite2_2.html')">GRAPHITE 1987-1990</li>
+					<li onclick="myhref('graphite3.html')">GRAPHITE 2016</li>
+					<li onclick="myhref('regular_color.html')">REGULAR COLOR PENCILS</li>
+				</ul>
+				<ul>
+					<li onclick="myhref('carti.html')">CARTI</li>
+					<li onclick="myhref('despre.html')"><a>DESPRE</a></li>
+					<li onclick = "myhref('contact.html')"><a>CONTACT</a></li>
+					<li onclick="myhref('credits.html')">CREDITS</li>
+				</ul>
+			</div>
+		</div>
+		<div class = "full-part1">
+			<div class = "home-icon" onclick="myhref('index.html')">
+				
+			</div>
+			<p class = "full-close">&#10006;</p>
+		</div>
+	</div>
+
+	<style type="text/css">
+		.menu ul li{
+			color:white;
+		}
+		.menu ul ul{
+			background-color: rgba(0,0,0,0);
+			z-index: 100;
+		}
+		.menu ul li:hover{
+			border-color: white;
+		}
+		.logo{
+			background-image: none;
+		}
+		.menu-open .line-menu{
+			background-color: white;
+		}
+		.footer{
+			position: relative;
+			z-index:10;
+			background-color: rgba(0,0,0,0);
+		}
+		.footer .center p{
+			color:white;
+		}
+	</style>
+	<script src = "resurse/href.js"></script>
+	<script type="text/javascript">
+		$("#video1").playbackRate = 0.5;
+	</script>
+</body>
+</html>

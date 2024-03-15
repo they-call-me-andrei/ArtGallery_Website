@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portofoliu</title>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale = 1">
+	<link href="css/style.css" type="text/css" media="screen" rel="stylesheet">
+	<link href="css/breakpoints.css" type="text/css" media="screen" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class = "menu">
+		<div class = "logo">
+			
+		</div>
+		<ul>
+			<li onclick = "myhref('index.html')">ACASĂ</li>
+			<li>TABLOURI
+				<ul>
+					<li onclick="myhref('portrete.html')">DRY PASTEL CHALK </li>
+					<li onclick="myhref('graphite1.html')">GRAPHITE 1991</li>
+					<li onclick="myhref('graphite2_2.html')">GRAPHITE 1987-1990</li>
+					<li onclick="myhref('graphite3.html')">GRAPHITE 2016</li>
+					<li onclick="myhref('regular_color.html')">REGULAR COLOR PENCILS</li>
+				</ul>
+			</li>
+			<li onclick="myhref('carti.html')">CĂRȚI</li>
+			<li onclick="myhref('despre.html')"><a>DESPRE</a></li>
+			<li onclick = "myhref('contact.html')"><a>CONTACT</a></li>
+			<li onclick = "myhref('credits.html')">CREDITS</li>
+		</ul>
+		<div class = "menu-open">
+			<div class = "line-menu"></div>
+			<div class = "line-menu"></div>
+			<div class = "line-menu"></div>
+		</div>
+	</div>
+	
+	<div class = "text-before-gallery">
+		<div class = "container">
+			<p class = "descriere">GRAPHITE PENCILS</p>
+			<p class = "text">Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+		</div>
+	</div>
+	<div class = "gallery-container">
+		<div class = "container">
+			<div class = "line height">
+				<div class = "photo , Waiting" style = "background-image: url(imagini/graphite29.jpg)" id = "1">
+
+				</div>	
+				<div class = "photo , Great smile" style = "background-image: url(imagini/graphite30.jpg)" id = "2">
+					
+				</div>
+			</div>
+			<div class = "line width special" style = "justify-content: center;">
+				<div class = "photo , Umbrella on the beach" style = "background-image: url(imagini/graphite28.jpg);" id = "3">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+	<div class = "footer" style = "margin-top:70px;">
+		<div class = "center">
+			<div class = "first">
+				<p>Valentina Ghinea</p>
+				<p>Artistă & Scriitoare</p>
+			</div>
+			<div class = "second">
+				<p>@ Copyright 2021 Valentina Ghinea</p>
+			</div>
+			<div class = "bottom">
+				<div class = "fb social">
+				
+				</div>
+				<div class = "wapp social">
+				
+				</div>
+				<div class = "gm social">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "full">
+		<div class = "full-part2">
+			<div class = "container">
+				<ul>
+					<li>TABLOURI</li>
+					<li onclick="myhref('portrete.html')">DRY PASTEL CHALK </li>
+					<li onclick="myhref('graphite1.html')">GRAPHITE 1991</li>
+					<li onclick="myhref('graphite2_2.html')">GRAPHITE 1987-1990</li>
+					<li onclick="myhref('graphite3.html')">GRAPHITE 2016</li>
+					<li onclick="myhref('regular_color.html')">REGULAR COLOR PENCILS</li>
+				</ul>
+				<ul>
+					<li onclick="myhref('carti.html')">CĂRȚI</li>
+					<li onclick="myhref('despre.html')"><a>DESPRE</a></li>
+					<li onclick = "myhref('contact.html')"><a>CONTACT</a></li>
+					<li onclick="myhref('credits.html')">CREDITS</li>
+				</ul>
+			</div>
+		</div>
+		<div class = "full-part1">
+			<div class = "home-icon" onclick="myhref('index.html')">
+				
+			</div>
+			<p class = "full-close">&#10006;</p>
+		</div>
+	</div>
+	<div class = "full-picture">
+		<div class = "sec1">
+			<p>&#10216;</p>
+		</div>
+		<div class = "picture">
+			<div class = "width">
+				<p style = "white-space: nowrap;"></p>
+			</div>
+			<div class = "height">
+				<p style = "white-space: nowrap;"></p>
+			</div>
+		</div>
+		<div class = "sec3">
+			<div class = "part1">
+				<p class = "full-close">&#10006;</p>
+			</div>
+			<p>&#10217;</p>
+		</div>
+	</div>
+
+	<script src = "resurse/href.js"></script>
+	<script type="text/javascript">
+		function showHeight(img){
+			$(".full-picture .picture .height").show();
+			$(".full-picture .picture .width").hide();
+			$(".full-picture .picture .height").css('background-image','url('+ img +')');
+		}
+
+		function showWidth(img){
+			$(".full-picture .picture .height").hide();
+			$(".full-picture .picture .width").show();
+			$(".full-picture .picture .width").css('background-image','url('+ img +')');
+		}
+
+		var x;
+		$(".photo").click(function(){
+
+			var y = $(this).attr('class').split(',')[1];
+			x = parseInt($(this).attr('id'),10);
+			if(x == 1){
+				$(".full-picture .sec1 p").hide();
+			}
+			var img = $(this).css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1'); 
+			if($(this).parent().hasClass('height') == true){
+				showHeight(img);
+			}else{
+				showWidth(img);
+			}
+			$(".full-picture").css('display', 'flex');
+			$(".full-picture .picture p").text(y);
+		});
+		$(".full-picture .sec3 p").click(function(){
+			if(x<3){
+				if(x == 2){
+					$(this).hide();
+				}
+				$(".full-picture .sec1 p").show();
+				x++;
+				var img2 = $("#" + x).css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1'); 
+				var y = $("#" + x).attr('class').split(',')[1];
+				$(".full-picture .picture p").text(y);
+				if($("#" + x).parent().hasClass('height') == true){
+					showHeight(img2);
+				}else{
+					showWidth(img2);
+				}
+			}
+		});
+		$(".full-picture .sec1 p").click(function(){
+			if(x>1){
+				if(x == 2){
+					$(this).hide();
+				}
+				$(".full-picture .sec3 p").show();
+				x--;
+				var img2 = $("#" + x).css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1'); 
+				var y = $("#" + x).attr('class').split(',')[1];
+				$(".full-picture .picture p").text(y);
+				if($("#" + x).parent().hasClass('height') == true){
+					showHeight(img2);
+				}else{
+					showWidth(img2);
+				}
+			}
+		});
+		$(".sec3 .part1").click(function(){
+			$(".full-picture").hide();
+		});
+	</script>
+</body>
+</html>
